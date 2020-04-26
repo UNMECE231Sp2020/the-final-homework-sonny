@@ -60,6 +60,7 @@ class Queue {
 		Queue<Q> operator=(const Queue<Q> q) {
 			_data = q._data;
 			_size = _data.size();
+			return *this;
 		}
 
 		template <class U>

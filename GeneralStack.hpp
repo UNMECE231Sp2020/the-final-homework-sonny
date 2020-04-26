@@ -56,6 +56,7 @@ class Stack {
 		Stack<T> operator=(const Stack<T> &stack) {
 			_size = stack._size;
 			_data = stack._data;
+			return *this;
 		}
 
 		template <class S>
