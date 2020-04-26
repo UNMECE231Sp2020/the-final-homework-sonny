@@ -36,11 +36,13 @@ class Queue {
 		//Push to queue
 		void enqueue(Q value) {
 			_data.push_back(value);
+			_size++;
 		}
 
 		//Pop from queue
 		void dequeue() {
 			_data.pop_back();
+			_size--;
 		}
 
 		void print() {

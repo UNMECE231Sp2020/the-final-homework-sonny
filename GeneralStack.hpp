@@ -31,11 +31,13 @@ class Stack {
 		//Adding data to the data structure
 		void push(T value) {
 			_data.push_front(value);
+			_size++;
 		}
 
 		//Removing data from the data structure
 		void pop() {
 			_data.pop_front();
+			_size--;
 		}
 
 		bool search(T value) {
